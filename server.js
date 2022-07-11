@@ -21,10 +21,10 @@ const sess = {
 
 app.use(session(sess));
 
-// const helpers = require('./utils/helpers'); // future update
-// const hbs = exphbs.create({ helpers }); // future update
-// app.engine('handlebars', hbs.engine); // future update
+const helpers = require('./utils/helpers');
+const hbs = exphbs.create({ helpers });
 
+app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
 
 app.use(express.json());
