@@ -1,1 +1,2 @@
-# my-tech-blog
+# Tye's Tech Blog
+
